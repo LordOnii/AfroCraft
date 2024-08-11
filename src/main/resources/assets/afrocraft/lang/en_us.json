@@ -5,5 +5,7 @@
   "item.afrocraft.weed": "Weed",
   "block.afrocraft.weed_crop": "Weed Crop",
 
-  "item.afrocraft.blunt": "Blunt"
+  "item.afrocraft.blunt": "Blunt",
+
+  "entity.minecraft.villager.dealer": "Dealer"
 }
