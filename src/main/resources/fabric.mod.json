@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "afrocraft",
+	"version": "${version}",
+	"name": "AfroCraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/afrocraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"afrocraft.afrocraft.AfroCraft"
+		],
+		"client": [
+			"afrocraft.afrocraft.AfroCraftClient"
+		],
+		"fabric-datagen": [
+			"afrocraft.afrocraft.AfroCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"afrocraft.mixins.json",
+		{
+			"config": "afrocraft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
