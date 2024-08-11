@@ -45,7 +45,11 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
+
         AfroCraft.LOGGER.info("Registering Mod Blocks for " + AfroCraft.MOD_ID);
+
+
+
     }
 
 }

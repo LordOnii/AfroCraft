@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-    public static final Item BAKEDCARROT = registerItem("baked_carrot",
+    public static final Item BAKED_CARROT = registerItem("baked_carrot",
             new Item(
                     new Item.Settings()
                     .food(new FoodComponent
@@ -59,8 +59,27 @@ public class ModItems {
         return Registry.register(Registries.ITEM, id, item);
     }
     public static void registerModItems() {
+
+        /* Register items in creative groups */
+
+        // baked_carrot
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
+                .register((itemGroup) -> itemGroup.add(ModItems.BAKED_CARROT));
+
+        // weed_seeds
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
+                .register((itemGroup) -> itemGroup.add(ModItems.WEED_SEEDS));
+
+        // weed
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register((itemGroup) -> itemGroup.add(ModItems.BAKEDCARROT));
+                .register((itemGroup) -> itemGroup.add(ModItems.WEED));
+
+        // blunt
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
+                .register((itemGroup) -> itemGroup.add(ModItems.BLUNT));
+
+
+
         AfroCraft.LOGGER.info("Registering Mod Items for " + AfroCraft.MOD_ID);
     }
 }
