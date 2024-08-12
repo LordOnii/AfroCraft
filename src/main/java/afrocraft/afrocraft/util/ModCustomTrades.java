@@ -12,6 +12,19 @@ import net.minecraft.village.VillagerProfession;
 public class ModCustomTrades {
     public static void registerCustomTrades(){
         TradeOfferHelper.registerVillagerOffers(
+                ModVillagers.DEALER,
+                1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 2),
+                            new ItemStack(ModItems.WEED, 5),
+                            6,
+                            10,
+                            0.2f
+                    ));
+                }
+        );
+        TradeOfferHelper.registerVillagerOffers(
                 VillagerProfession.FARMER,
                 1,
                 factories -> {
