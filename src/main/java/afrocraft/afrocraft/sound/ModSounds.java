@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 public class ModSounds {
 
     public static final SoundEvent HYMN = registerSoundEvent("hymn");
+    public static final SoundEvent CRAZY_RAP = registerSoundEvent("crazy_rap");
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Identifier.of(AfroCraft.MOD_ID, name);

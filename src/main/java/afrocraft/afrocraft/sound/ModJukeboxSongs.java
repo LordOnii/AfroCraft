@@ -14,6 +14,7 @@ import net.minecraft.util.Util;
 public class ModJukeboxSongs {
 
     public static final RegistryKey<JukeboxSong> HYMN = of("hymn");
+    public static final RegistryKey<JukeboxSong> CRAZY_RAP = of("crazy_rap");
 
     private static RegistryKey<JukeboxSong> of(String id) {
         return RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(AfroCraft.MOD_ID, id));

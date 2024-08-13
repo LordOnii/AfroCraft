@@ -10,5 +10,8 @@
   "entity.minecraft.villager.dealer": "Dealer",
 
   "item.afrocraft.hymn_music_disc" : "Server's hymn",
-  "item.afrocraft.hymn_music_disc.desc" : "Because I Got High - Afroman"
+  "item.afrocraft.hymn_music_disc.desc" : "Because I Got High - Afroman",
+
+  "item.afrocraft.crazy_rap_music_disc" : "Music Disc",
+  "item.afrocraft.crazy_rap_music_disc.desc" : "Crazy Rap (Colt 45 & 2 Zig Zags) - Afroman"
 }

@@ -54,7 +54,12 @@ public class ModItems {
 
     public static final Item HYMN_MUSIC_DISC = registerItem(
             "hymn_music_disc",
-            new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.HYMN))
+            new Item((new Item.Settings()).maxCount(1).rarity(Rarity.EPIC).jukeboxPlayable(ModJukeboxSongs.HYMN))
+    );
+
+    public static final Item CRAZY_RAP_MUSIC_DISC = registerItem(
+            "crazy_rap_music_disc",
+            new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.CRAZY_RAP))
     );
 
     public static Item registerItem(String name, Item item) {
@@ -84,6 +89,14 @@ public class ModItems {
         // blunt
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> itemGroup.add(ModItems.BLUNT));
+
+        // hymn music disc
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.HYMN_MUSIC_DISC));
+
+        // crazy rap music disc
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.CRAZY_RAP_MUSIC_DISC));
 
 
 
