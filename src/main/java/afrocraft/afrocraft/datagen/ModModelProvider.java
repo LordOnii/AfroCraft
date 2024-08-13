@@ -18,7 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCrop(ModBlocks.WEED_CROP, WeedCrop.AGE, 0, 1, 2, 3, 3, 5);
+        blockStateModelGenerator.registerCrop(ModBlocks.WEED_CROP, WeedCrop.AGE, 0, 1, 2, 3, 3, 3);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLUNT, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEED , Models.GENERATED);
         AfroCraft.LOGGER.info("Generating weed_seeds item model");
-        // itemModelGenerator.register(ModItems.WEED_SEEDS , Models.GENERATED);
+        // itemModelGenerator.register(ModItems.WEED_SEEDS , Models.GENERATED); because AliasedBlockItem probably
         itemModelGenerator.register(ModItems.BAKED_CARROT , Models.GENERATED);
 
     }

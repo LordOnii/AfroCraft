@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "textures": {
-    "crop": "afrocraft:block/weed_crop_stage5"
-  }
-}

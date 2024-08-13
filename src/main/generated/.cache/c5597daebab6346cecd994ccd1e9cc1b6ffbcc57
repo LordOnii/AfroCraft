@@ -1,4 +1,4 @@
-// 1.21.1	2024-08-13T04:29:52.4858848	AfroCraft/Block Loot Tables
-f19f3fafe35262ad8a210b6f45605dbe243acf4c data\minecraft\loot_table\blocks\diamond_block.json
-b27c5b3d3db76846a5a9960ec4b09dc22bf1241a data\minecraft\loot_table\blocks\diamond_ore.json
-93eecfb9df7d71125fc581fd772215ba50f2cb62 data\afrocraft\loot_table\blocks\weed_crop.json
+// 1.21.1	2024-08-13T04:42:07.051172575	AfroCraft/Block Loot Tables
+f19f3fafe35262ad8a210b6f45605dbe243acf4c data/minecraft/loot_table/blocks/diamond_block.json
+b27c5b3d3db76846a5a9960ec4b09dc22bf1241a data/minecraft/loot_table/blocks/diamond_ore.json
+93eecfb9df7d71125fc581fd772215ba50f2cb62 data/afrocraft/loot_table/blocks/weed_crop.json
