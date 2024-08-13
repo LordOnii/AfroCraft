@@ -1,5 +1,6 @@
 package afrocraft.afrocraft.datagen;
 
+import afrocraft.afrocraft.AfroCraft;
 import afrocraft.afrocraft.block.ModBlocks;
 import afrocraft.afrocraft.block.custom.WeedCrop;
 import afrocraft.afrocraft.item.ModItems;
@@ -22,9 +23,11 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        AfroCraft.LOGGER.info("Generating items models");
         itemModelGenerator.register(ModItems.BLUNT, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEED , Models.GENERATED);
-        itemModelGenerator.register(ModItems.WEED_SEEDS , Models.GENERATED);
+        AfroCraft.LOGGER.info("Generating weed_seeds item model");
+        // itemModelGenerator.register(ModItems.WEED_SEEDS , Models.GENERATED);
         itemModelGenerator.register(ModItems.BAKED_CARROT , Models.GENERATED);
 
     }

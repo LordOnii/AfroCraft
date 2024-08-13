@@ -1,12 +1,13 @@
 {
   "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "food",
   "ingredient": {
     "item": "minecraft:carrot"
   },
   "result": {
     "id": "afrocraft:baked_carrot"
-  },
-  "experience": 0.1,
-  "cookingtime": 200,
-  "group": "ingredients"
+  }
 }

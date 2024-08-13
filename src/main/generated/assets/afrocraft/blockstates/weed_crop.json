@@ -16,7 +16,7 @@
       "model": "afrocraft:block/weed_crop_stage3"
     },
     "age=5": {
-      "model": "afrocraft:block/weed_crop_stage3"
+      "model": "afrocraft:block/weed_crop_stage5"
     }
   }
 }
