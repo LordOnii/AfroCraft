@@ -2,7 +2,7 @@
   "hymn" : {
     "sounds" : [
       {
-        "name" : "afrocraft:because-i-got-high",
+        "name" : "afrocraft:hymn",
         "stream" : true
       }
     ]

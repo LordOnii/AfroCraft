@@ -1,10 +1,11 @@
-// 1.21.1	2024-08-13T05:26:11.625166212	AfroCraft/Model Definitions
-368888c9da293483ffe4297b4f9146f8dac17d54 assets/afrocraft/models/item/weed_seeds.json
-2ffbca40b147eb41faafd19bbf8b4f54772d3a83 assets/afrocraft/models/block/weed_crop_stage1.json
-d4ca5ec96ab03904337bedbe784c6c14593a8f5b assets/afrocraft/models/block/weed_crop_stage0.json
-9d680beb43d5a838b18c1e8fc90d2a1522a9aa58 assets/afrocraft/models/block/weed_crop_stage3.json
-a99b0e35b1af18e0aaf4fa17ad9632d6f2e87b20 assets/afrocraft/blockstates/weed_crop.json
-99be1d99a7933ed640bb466c4b97ed1399e435f0 assets/afrocraft/models/block/weed_crop_stage2.json
-80cff0c9d242c179f3134c034a8fc07d4c35f1a9 assets/afrocraft/models/item/blunt.json
-cb1df2e968d8a94b3f98931fa74c17fa8e604f2c assets/afrocraft/models/item/weed.json
-3b90ea24390db772ad09ce862cc0a8826d697c39 assets/afrocraft/models/item/baked_carrot.json
+// 1.21.1	2024-08-13T19:29:25.3682582	AfroCraft/Model Definitions
+2ffbca40b147eb41faafd19bbf8b4f54772d3a83 assets\afrocraft\models\block\weed_crop_stage1.json
+80cff0c9d242c179f3134c034a8fc07d4c35f1a9 assets\afrocraft\models\item\blunt.json
+45765e0157ad4dbf2294be5c00bea622f75dc3b6 assets\afrocraft\models\item\hymn_music_disc.json
+9d680beb43d5a838b18c1e8fc90d2a1522a9aa58 assets\afrocraft\models\block\weed_crop_stage3.json
+a99b0e35b1af18e0aaf4fa17ad9632d6f2e87b20 assets\afrocraft\blockstates\weed_crop.json
+368888c9da293483ffe4297b4f9146f8dac17d54 assets\afrocraft\models\item\weed_seeds.json
+3b90ea24390db772ad09ce862cc0a8826d697c39 assets\afrocraft\models\item\baked_carrot.json
+99be1d99a7933ed640bb466c4b97ed1399e435f0 assets\afrocraft\models\block\weed_crop_stage2.json
+d4ca5ec96ab03904337bedbe784c6c14593a8f5b assets\afrocraft\models\block\weed_crop_stage0.json
+cb1df2e968d8a94b3f98931fa74c17fa8e604f2c assets\afrocraft\models\item\weed.json

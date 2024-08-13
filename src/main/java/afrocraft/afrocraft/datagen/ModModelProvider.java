@@ -26,9 +26,9 @@ public class ModModelProvider extends FabricModelProvider {
         AfroCraft.LOGGER.info("Generating items models");
         itemModelGenerator.register(ModItems.BLUNT, Models.GENERATED);
         itemModelGenerator.register(ModItems.WEED , Models.GENERATED);
-        AfroCraft.LOGGER.info("Generating weed_seeds item model");
         // itemModelGenerator.register(ModItems.WEED_SEEDS , Models.GENERATED); because AliasedBlockItem probably
         itemModelGenerator.register(ModItems.BAKED_CARROT , Models.GENERATED);
+        itemModelGenerator.register(ModItems.HYMN_MUSIC_DISC, Models.GENERATED);
 
     }
 }

@@ -3,6 +3,7 @@ package afrocraft.afrocraft.item;
 import afrocraft.afrocraft.AfroCraft;
 import afrocraft.afrocraft.block.ModBlocks;
 import afrocraft.afrocraft.item.custom.Blunt;
+import afrocraft.afrocraft.sound.ModJukeboxSongs;
 import afrocraft.afrocraft.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.jukebox.JukeboxSongs;
@@ -52,8 +53,8 @@ public class ModItems {
     );
 
     public static final Item HYMN_MUSIC_DISC = registerItem(
-            "hymn_music_disk",
-            new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.ofVanilla("hymn"))))
+            "hymn_music_disc",
+            new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.HYMN))
     );
 
     public static Item registerItem(String name, Item item) {

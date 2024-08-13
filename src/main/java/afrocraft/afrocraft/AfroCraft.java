@@ -2,11 +2,14 @@ package afrocraft.afrocraft;
 
 import afrocraft.afrocraft.item.ModItems;
 import afrocraft.afrocraft.block.ModBlocks;
+import afrocraft.afrocraft.sound.ModJukeboxSongs;
 import afrocraft.afrocraft.sound.ModSounds;
 import afrocraft.afrocraft.util.ModCustomTrades;
 import afrocraft.afrocraft.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.jukebox.JukeboxSongs;
+import net.minecraft.registry.RegistryKeys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,9 +31,14 @@ public class AfroCraft implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		LOGGER.info("Registry:"  + ModBlocks.WEED_CROP);
+
 		ModVillagers.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
 
 		ModSounds.registerModSounds();
+		ModJukeboxSongs.registerModJukeboxSounds();
+
+		LOGGER.info("RegistryKeys: " + ModJukeboxSongs.HYMN);
 	}
 }

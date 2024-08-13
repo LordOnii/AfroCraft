@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "afrocraft:item/hymn_music_disc"
+  }
+}
