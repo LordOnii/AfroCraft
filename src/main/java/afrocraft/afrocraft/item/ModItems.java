@@ -23,40 +23,29 @@ public class ModItems {
                         .saturationModifier(0.8F)
                         .build()
                     )
-            ),
-            true
+            )
     );
 
     public static final Item WEED_SEEDS = registerItem("weed_seeds",
             new AliasedBlockItem(
                     ModBlocks.WEED_CROP, new Item.Settings()
-            ),
-            true
+            )
     );
 
     public static final Item WEED = registerItem("weed",
-            new Item(new Item.Settings()),
-            true
+            new Item(new Item.Settings())
     );
 
-    // TODO
     public static final Item BLUNT = registerItem("blunt",
-            new Blunt(new Item.Settings().maxCount(1)),
-            true
+            new Blunt(new Item.Settings().maxCount(1))
     );
 
-    public static Item registerItem(String name, Item item, boolean shouldRegisterItem) {
-        // Register the block and its item.
-        Identifier id = Identifier.of(AfroCraft.MOD_ID, name);
-
-        // Sometimes, you may not want to register an item for the block.
-        // Eg: if it's a technical block like `minecraft:air` or `minecraft:end_gateway`
-        if (shouldRegisterItem) {
-            Item itemRegister = new Item(new Item.Settings());
-            Registry.register(Registries.ITEM, id, itemRegister);
+    public static Item registerItem(String name, Item item) {
+        if (item != null) {
+            Identifier id = Identifier.of(AfroCraft.MOD_ID, name);
+            return Registry.register(Registries.ITEM, id, item);
         }
-
-        return Registry.register(Registries.ITEM, id, item);
+        return null;
     }
     public static void registerModItems() {
 

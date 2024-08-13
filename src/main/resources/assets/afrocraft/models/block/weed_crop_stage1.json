@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "afrocraft:block/weed_crop_stage1"
-  }
-}
