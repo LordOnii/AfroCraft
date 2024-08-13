@@ -2,6 +2,7 @@ package afrocraft.afrocraft;
 
 import afrocraft.afrocraft.item.ModItems;
 import afrocraft.afrocraft.block.ModBlocks;
+import afrocraft.afrocraft.sound.ModSounds;
 import afrocraft.afrocraft.util.ModCustomTrades;
 import afrocraft.afrocraft.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
@@ -29,5 +30,7 @@ public class AfroCraft implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 		ModCustomTrades.registerCustomTrades();
+
+		ModSounds.registerModSounds();
 	}
 }

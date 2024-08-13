@@ -3,18 +3,26 @@ package afrocraft.afrocraft.item;
 import afrocraft.afrocraft.AfroCraft;
 import afrocraft.afrocraft.block.ModBlocks;
 import afrocraft.afrocraft.item.custom.Blunt;
+import afrocraft.afrocraft.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.jukebox.JukeboxSongs;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.MusicType;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 
 public class ModItems {
-    public static final Item BAKED_CARROT = registerItem("baked_carrot",
+    public static final Item BAKED_CARROT = registerItem(
+            "baked_carrot",
             new Item(
                     new Item.Settings()
                     .food(new FoodComponent
@@ -26,18 +34,26 @@ public class ModItems {
             )
     );
 
-    public static final Item WEED_SEEDS = registerItem("weed_seeds",
+    public static final Item WEED_SEEDS = registerItem(
+            "weed_seeds",
             new AliasedBlockItem(
                     ModBlocks.WEED_CROP, new Item.Settings()
             )
     );
 
-    public static final Item WEED = registerItem("weed",
+    public static final Item WEED = registerItem(
+            "weed",
             new Item(new Item.Settings())
     );
 
-    public static final Item BLUNT = registerItem("blunt",
+    public static final Item BLUNT = registerItem(
+            "blunt",
             new Blunt(new Item.Settings().maxCount(1))
+    );
+
+    public static final Item HYMN_MUSIC_DISC = registerItem(
+            "hymn_music_disk",
+            new Item((new Item.Settings()).maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.ofVanilla("hymn"))))
     );
 
     public static Item registerItem(String name, Item item) {
@@ -47,11 +63,12 @@ public class ModItems {
         }
         return null;
     }
+
     public static void registerModItems() {
 
         /* Register items in creative groups */
 
-        // baked_carrot
+        //  baked_carrot
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> itemGroup.add(ModItems.BAKED_CARROT));
 

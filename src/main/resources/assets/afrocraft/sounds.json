@@ -1,0 +1,10 @@
+{
+  "hymn" : {
+    "sounds" : [
+      {
+        "name" : "afrocraft:because-i-got-high",
+        "stream" : true
+      }
+    ]
+  }
+}

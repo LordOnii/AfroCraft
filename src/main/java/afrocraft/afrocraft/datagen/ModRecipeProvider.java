@@ -23,7 +23,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
         offerSmelting(exporter, List.of(Items.CARROT), RecipeCategory.FOOD, ModItems.BAKED_CARROT, 0.7f, 200, "food");
-
+        // blunt recipe
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLUNT)
                 .pattern("WWW")
                 .pattern("PPP")
